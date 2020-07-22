@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style type="text/css">
+	*{
+		font-weight: bold;
+		font-family: 'Shadows Into Light', cursive;
+	}
+	div{
+		border:1px solid #CCCCCC;
+		margin: 5px; text-align: center;
+	}
+	#con{
+		width: 80%;
+		margin: 0px auto;
+	}
+	
+	#con>#header{
+		height: 100px;
+		line-height: 100px;
+		font-size: 2.0em;
+	}
+	
+	#con>#nav{
+		height: 150px;
+	}
+	#con>#nav>p{
+		font-size: 1.5em;
+	}
+	#con>#nav>ul{
+	/*부모에 height가 있다면 overflow: hidden을 안해줘도 된다.*/
+		width: 700px;
+		height: 50px;
+		border: 0px solid red;
+		margin: 0px auto;
+		line-height: 50px;
+	
+	}
+	#con>#nav>ul>li{
+		list-style-type: none;
+		width: 130px; height: 50px;
+		border: 1px solid #dddddd;
+		float: left;
+		border-left-width: 0px;
+	}
+	#con>#wrap{
+		overflow: hidden;
+	}
+	#con>#wrap>#content{
+		width: 70%;
+	}
+	#con>#wrap>#banner{
+		width: 28.3%;
+	}
+	#con>#wrap>#content,#con>#wrap>#banner{
+		height: 400px;
+		font-size: 1.5em;
+		line-height: 400px;
+		float: left;
+	}
+	#con > #footer{
+		height: 100px;
+		line-height:100px; 
+		font-size: 1.5em;
+
+	}
+	
+</style>
+</head>
+<body>
+	<div id="con">
+		<div id="header">HEADER</div>
+
+		<div id="nav">
+			<p>NAVIGATION</p>
+			<ul>
+				<li style="border-left-width: 1px;">menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</div>
+
+		<div id="wrap">
+			<div id="content">CONTENT</div>
+			<div id="banner">BANNER</div>
+
+
+		</div>
+
+		<div id="footer">FOOTER</div>
+
+
+	</div>
+
+
+</body>
+</html>

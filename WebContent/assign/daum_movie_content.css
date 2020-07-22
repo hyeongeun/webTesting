@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+#content{
+	border: 0px red solid;
+	width: 60%;
+	margin: 0px auto;
+}
+
+#content > #list_menu{
+	overflow: hidden;
+	margin-left: 370px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	
+}
+#content > #list_menu > .menu{
+	border: 0px solid blue;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#content>#list_menu li{
+	list-style-type: none;
+	float: left;
+}
+#content>#list_menu a{
+	text-decoration: none;
+	
+}
+
+#content > #list_menu > .menu li:first-child{
+	border: 1px solid red;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#content > #list_menu > .menu li:first-child a{
+	color: red;
+	font-weight: bold;
+}
+#content > #list_menu > .menu li:last-child{
+	border: 1px solid #cccccc;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#content > #list_menu > .menu li:last-child a{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+#content > #list_menu > .menu a{
+	margin: 30px;
+	color:#CCCCCC;
+	
+}
+#content > #list_menu > .menu li:last-child a:hover{
+	color:red;
+	font-weight: bold;
+}
+
+
+#poster{
+	border :0px purple solid;
+}
+
+#poster #poster_first{
+	vertical-align:top;
+	border: 0px black solid;
+}
+#poster ul{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#poster li{
+	width: 225px;
+	border:0px solid pink;
+	height: 400px;
+	list-style-type: none;
+	display: inline-block;
+	margin: 40px 60px 0 0;
+
+}
+#poster #poster_first li:first-child, #poster #poster_second li:first-child,
+#poster #poster_third li:first-child, #poster #poster_fourth li:first-child {
+	margin-left: 10px;
+}
+
+#poster #poster_first li:last-child, #poster #poster_second li:last-child,
+#poster #poster_third li:last-child, #poster #poster_fourth li:last-child {
+	margin-right: 0px;
+}
+#poster img{
+	width: 225px;
+    height: 340px
+}
+#poster img:hover{
+	opacity: 0.4;
+}
+
+
+#content > #list_menu > .arrange{
+	border: 0px solid blue;
+	float: right;
+	height: 70px;
+	line-height: 50px;
+	margin-right: 10px;
+	
+}
+
+#content > #list_menu > .arrange li{
+	margin-right: 20px; 
+	font-size: 0.9em;
+	
+}
+#content > #list_menu > .arrange a{
+	color: black;
+}
+#content > #list_menu > .arrange a:hover{
+	text-decoration: underline;
+}
+
+#poster .poster_info .movie_subject a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#poster .poster_info .movie_subject a:hover{
+	text-decoration:underline;
+	color: red;
+	
+}
+#poster .poster_info .movie_subject .grade_15{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #0080ff;
+}
+#poster .poster_info .movie_subject .grade_12{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fcd003;
+}
+#poster .poster_info .movie_subject .grade_all{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #00d000;
+}
+
+#poster .poster_info .poster_netizen a{
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+}
+#poster .poster_info .poster_netizen a:hover{
+	text-decoration: underline;
+}
+#poster .poster_info .poster_netizen .netizen_star{
+	color: red;
+	font-weight: bold;
+}
+#poster .poster_info .poster_netizen .citizen_star{
+	color: #00d000;
+	font-weight: bold;
+	margin-left: 5px;
+}
+#poster .poster_info .movie_open{
+	font-size: 0.8em;
+	color: #6a6a6a;
+	padding-top: 0px;
+}
+
+#content_last{
+	overflow: hidden;
+	margin-left: 480px;
+	margin-bottom: 50px;
+}
+#content_last li{
+	list-style-type: none;
+	float: left;
+	text-decoration: none;
+	margin: 10px;
+}
+#content_last li a{
+	text-decoration: none;
+}
+#content_last li:first-child{
+	background-color: red;
+	width: 20px;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+#content_last li:first-child a{
+	color: white;
+}
+#content_last li:last-child a{
+	color: black;
+}
+#content_last li:last-child a:hover{
+	text-decoration: underline;
+	color: red;
+}
+

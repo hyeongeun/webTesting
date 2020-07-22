@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body{
+	margin: 0px; padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+header{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+
+}
+header > #header_nav{
+	width: 100%;
+	background-color: #2d1152;
+	overflow: hidden;
+	
+}
+
+header> #header_nav>.list{
+	float: left; height: 50px;
+}
+header> #header_nav>.list li{
+	float: left; 
+	color:#ffffff;	
+	margin-right: 30px;
+	font-size: 0.9em;
+	line-height: 15px;
+}
+
+header> #header_nav>.firefox{
+	float: right; height: 50px;
+	color:#ffffff;
+	line-height: 50px;
+}
+
+header>#header_info{
+	width: 1100px;
+	margin: 0px auto;
+	border: 0px solid blue;
+	overflow: hidden;
+}
+header>#header_info>div{
+	float: left;
+	margin-top: 10px;
+	
+}
+header .search>input[type="text"]{
+	width:400px;
+	border: 1px solid #3488d9;
+	font-size: 20px;
+	margin-left: 10px;
+	padding: 5px;
+}
+header .search>input[type="button"]{
+	width: 125px;
+	height: 38px;
+	background-image: url("yahoo_search_btn.png");
+	color: #FFFFFF;
+	font-size: 1.2em;
+}	
+
+header .service li{
+	float: left; margin-right: 40px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

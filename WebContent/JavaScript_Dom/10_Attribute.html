@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.abc{
+		font-size: 50px;
+	}
+</style>
+<script type="text/javascript">
+	function sub(){
+		var arr = new Array();
+		
+		var div = document.createElement("div");
+	//	div.align = "center";
+	//  div.style.color = "blue";
+	
+		div.className="abc";
+		//div.setAttribute("class","abc");
+	
+		div.setAttribute("align","center");
+		div.setAttribute("style", "color:blue");
+		//div.setAttribute("onclick","xyz('apple')")
+		
+	//	var su = 10;
+	//	div.setAttribute("onclick","efg('"+su+"')");
+	
+	//	div.onclick=hij;
+		
+		var su = 10;
+		var value = 20;
+		
+		div.onclick = function(){
+			lmn(su,value);
+			
+		}
+	
+	
+		div.innerHTML = "점심시간이다.";
+		
+		arr.push(div.align);
+		arr.push(div.getAttribute("align"));
+		
+		document.body.appendChild(div);
+		
+		alert(arr.join("\n"));
+	}
+	function xyz(str){
+		alert(str);
+	}
+	function efg(str) {
+		alert(str);
+	}
+	function hij(){
+		alert("하하하하하ㅏ");
+	}
+	function lmn(a,b){
+		alert(a+b);
+	}
+	
+</script>
+</head>
+<body onload="sub()">
+
+</body>
+</html>

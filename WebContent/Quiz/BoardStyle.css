@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#board {
+   width: 500px;
+   margin: 300px auto;
+}
+label{
+   width: 70px;
+   float:left;
+   text-align: center;
+}
+
+.eachDiv{
+   border: solid 2px;
+   border-top-width: 0px;
+}
+span {
+   border-left:solid 2px;
+   display: inline-block;
+}
+input{
+   margin-left:2px;
+}
+a{
+text-decoration: none;
+}
+

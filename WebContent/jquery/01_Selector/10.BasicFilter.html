@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery - 기본 필터 선택자</title>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//짝홀수 뽑아내기 
+		$("p:even").css("color","red"); //짝수선택(0번지)
+		$("p:first").css("color","blue");	//오버라이딩
+		$("p:last").css("color","pink"); 	//오버라이딩
+		$("p:eq(2)").css("color","yellow");	//0번지부터시작 ->index개념
+		
+		
+		$(".first > li:even").css("color","blue");
+		$(".first > li:odd").css("color","red"); 	//홀수 뽑아내기
+		
+		$(".second > li:first").css("color","red");
+		$(".second > li:last").css("color","blue");
+		$(".second > li:eq(1)").css("color","green");
+		
+		$(".third > li:gt(2)").css("color","red");	//2번지 보다 큰거
+		$(".third > li:lt(2)").css("color","blue");	//2번지 보다 작은거
+		$(".third > li:not(:eq(2))").css("background-color","pink");	//2번지 아닌 것들
+		
+	});
+</script>
+</head>
+<body>
+	<p>1월</p>
+	<p>2월</p>
+	<p>3월</p>
+	<p>4월</p>
+	<p>5월</p>
+	<p>6월</p>
+	<p>7월</p>
+	<p>8월</p>
+	<p>9월</p>
+	<p>10월</p>
+	<p>11월</p>
+	<p>12월</p>
+	<br/><br/>
+	
+	<div>
+		<ul class="first">
+			<li>사과</li>
+			<li>바나나</li>
+			<li>딸기</li>
+			<li>메론</li>
+		</ul>
+	</div>
+	
+	<div>
+		<ul class="second">
+			<li>짜장면</li>
+			<li>우동</li>
+			<li>짬뽕</li>
+			<li>탕수육</li>
+		</ul>
+	</div>
+	
+	<div>
+		<ul class="third">
+			<li>커피</li>
+			<li>콜라</li>
+			<li>사이다</li>
+			<li>환타</li>
+			<li>우유</li>
+		</ul>
+	</div>
+</body>
+</html>

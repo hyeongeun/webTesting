@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	function sub(){
+		var formNode = document.createElement("form");
+		formNode.setAttribute("id","createForm");
+		formNode.setAttribute("action","#");
+		formNode.setAttribute("method","post");
+		
+		var labelNode = document.createElement("label");
+		labelNode.innerHTML = "이름";
+		var br1 = document.createElement("br");
+		var br2 = document.createElement("br");
+		var inputNode = document.createElement("input");
+		inputNode.setAttribute("type","text");
+		inputNode.setAttribute("name","name");
+		inputNode.setAttribute("size","12");
+		
+		
+		var inputButton = document.createElement("input");
+		inputButton.setAttribute("type","button");
+		inputButton.setAttribute("value","전송")
+		inputButton.setAttribute("onclick","abc(createForm)")
+		
+		document.body.appendChild(formNode);
+		formNode.appendChild(labelNode);
+		formNode.appendChild(br1);
+		formNode.appendChild(br2);
+		formNode.appendChild(inputNode);
+		formNode.appendChild(inputButton);
+	}
+
+	function abc(){
+		var createForm = document.getElementById("createForm");
+		if(createForm.name.value==""){
+			alert("이름을 입력하세요");
+			createForm.name.focus();
+		}
+		createForm.submit();
+	}
+	</script>
+</head>
+<body onload="sub()">
+
+
+</body >
+</html>

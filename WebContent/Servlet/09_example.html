@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>09_example</title>
+</head>
+<body>
+
+	<!-- 장바구나 저장, 보기, 삭제 -->
+	<form action="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieSet"  method="post">
+		<table>
+			<tr>
+				<td><img src="./../img/pengsoo1.jpg" width="150" height="100"></td>
+				<td><img src="./../img/pengsoo2.jpg" width="150" height="100"></td>
+				<td><img src="./../img/pengsoo3.jpg" width="150" height="100"></td>
+			</tr>
+			
+			<tr>
+				<td align="center">
+				<input type="checkbox" name="kakao" value="pengsoo1">pet
+				</td>
+				
+				<td align="center">
+				<input type="checkbox" name="kakao" value="pengsoo2">pengsoo
+				</td>
+				
+				<td align="center">
+				<input type="checkbox" name="kakao" value="pengsoo3">princess
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<input type="submit" value="장바구니"/>
+					<input type="reset" value="취소"/>
+				</td>	
+			</tr>
+		</table>
+	</form>
+	<br><br>
+	
+	<div>
+		<a href="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieGet">장바구니 보기</a><br><br>
+		<a href="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieDel">장바구니 삭제</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+		//4. Array 객체
+		var su = [1,2,3,4];
+		var strArray = new Array("사과","바나나","딸기");
+		
+		document.write(su+"<br>"+ strArray +"<br>");
+		document.write(su.concat(strArray)+"<br>");
+		document.write(strArray.join("/")+"<br>"); 
+		document.write(strArray.slice(1)+"<br>"); 
+		document.write(strArray.sort()+"<br>");
+		document.write(strArray.reverse()+"<br><br>");
+		
+		//5. Date 객체는 JSTL 할 예정
+		
+		//6. Global(내장 함수)
+		var su = "77";
+		document.write(parseInt(su)+100+"<br>");
+		
+		
+		//자바하고 자바스크립트 데이터 전달시 한글, 특수문자 처리
+		//쓰기 쉬운걸로 둘중에 하나 쓰기
+		var url = "!&*&^%&*^@*";
+		var a = encodeURI(url);
+		var b = decodeURI(a);
+		document.write(a+"<br>"+b+"<br>");
+		
+		var c = encodeURIComponent(url);
+		var d = decodeURIComponent(c);
+		document.write(c+"<br>"+d+"<br>"); 
+		
+		var str="안녕하세요";
+		var x = encodeURI(str);
+		var y = decodeURI(x);
+		document.write("<br>"+x+"<br>"+y);
+		
+</script>
+</head>
+<body>
+
+</body>
+</html>

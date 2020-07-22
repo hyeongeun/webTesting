@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: webTesting
+Bundle-SymbolicName: webTesting
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.java.contextLifeCycle,
+ com.java.servlet

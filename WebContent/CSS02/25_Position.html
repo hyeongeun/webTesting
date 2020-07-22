@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POSITION</title>
+<style type="text/css">
+/*position: static, absolute, fixed, relative
+		stataic: 기본값이 순차적으로 쌓인다. margin,padding 이 가능하다.
+		absolute: 부모 태그를 기준으로 절대 위치
+		fixed: 절대적(absolute) 고정위치
+		relative: 상대적 위치 ->자신의 static 원래 위치에서 이동
+		
+*/
+	#red{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+	#yellow{
+		width: 400px;
+		height: 400px;
+		background-color: yellow;
+		position: relative;					/*자신의 static 원래 위치에서 이동*/
+		top:50px; left: 50px;
+	}
+ 	#yellow>#green{
+		width: 100px;
+		height: 100px;
+		background-color: green;
+		position: relative;
+		top:0px; left:100px;
+	}
+	#yellow>#blue{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		position: relative;
+		top:0px; left:300px;
+	} 
+	#pink{
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		position: relative;
+		top:100px; left: 100px;
+	}
+
+</style>
+</head>
+<body>
+  	<div id="red"></div>
+    <div id="yellow">
+    	<div id="green"></div>
+    	<div id="blue"></div>
+    </div>
+    <div id="pink"></div>
+</body>
+</html>

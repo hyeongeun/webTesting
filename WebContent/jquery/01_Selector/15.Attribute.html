@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery - 속성 선택자</title>
+<style type="text/css">
+	body{
+		font-size:12px;
+	}
+	.spotlight{
+		background-color:#ff0;
+	}
+	.redtext{
+		color:#f00;
+	}
+	.bluetext{
+		color:#00f;
+	}
+	.largetext{
+		font-size:30px;
+	}
+	.italctext{
+		font-style:italic;
+	}
+	.box{
+		border:3px solid #f00;
+	}
+</style>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("span[id]").addClass("spotlight");
+		$("span[id='simpletext1']").addClass("redtext");
+		$("span[id!='simpletext1']").addClass("bluetext");
+		
+		$("span[id^='complex']").addClass("largetext");	//시작하는 부분
+		$("span[id$='text1']").addClass("italctext");		//끝나는 부분	
+		$("span[id*='text']").addClass("box");		//포함하는 부분
+		
+		
+	})
+</script>
+</head>
+<body>
+	<span id="simpletext1">SIMPLETEXT1</span>
+	<span class="simpletext2">SIMPLETEXT2</span>
+	<span id="complextext1">COMPLEXTEXT1</span>
+	<span id="complextext2">COMPLEXTEXT2</span>
+	<span id="complex">COMPLEX</span>
+</body>
+</html>

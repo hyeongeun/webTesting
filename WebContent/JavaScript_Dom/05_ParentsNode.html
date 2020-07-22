@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sub(){
+		var arr = Array();
+		
+		var firstSon = document.getElementById("firstSon");
+		var firstSonFather = firstSon.parentNode;
+		arr.push(firstSonFather.nodeType +"\t" + firstSonFather.nodeName+"\t" + firstSonFather.nodeValue);
+		
+		var grandfather = firstSon.parentNode.parentNode.parentNode;
+		arr.push(grandfather.nodeType +"\t" + grandfather.nodeName+"\t" + grandfather.nodeValue);
+		
+		
+		alert(arr.join("\n"));
+		//부모는 ENTER라는 자식을 받아들이기 때문에 조심해야한다. 
+		//자식은 부모로 ENTER라는 부모를 받아들이지 않는다. 
+		//형제는 ENTER라는 형제를 받아 들인다. 
+	}
+</script>
+</head>
+<body onload="sub()">
+	<div id="grantfather">
+		<div id="father"> 
+			<span id="firstSon">첫째입니다.</span>
+			<span id="daughter">둘째입니다.</span>
+			<span id="secondSon">셋째입니다.</span>
+		</div>		
+	</div>
+</body>
+</html>

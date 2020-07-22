@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fun(){
+		var arr = new Array();
+		
+		var div = document.getElementsByTagName("div");
+		arr.push(div[0].nodeName);
+		arr.push(div[0].nodeValue);
+		arr.push("\n");
+		arr.push(div[0].childNodes[0].nodeName)
+		arr.push(div[0].childNodes[0].nodeValue)
+		alert(arr);
+		
+		var result = document.getElementById("result");
+		result.style.color="red";
+		result.innerHTML = div[0].childNodes[0].nodeValue;
+	}
+	function sub(){
+		var arr = new Array();
+		var melon = document.getElementById("melon");
+		arr.push(melon.nodeName+"," + melon.nodeValue);
+		arr.push(melon.childNodes.length);
+		
+		for(var i=0;i<melon.childNodes.length;i++){
+			//arr.push(melon.childNodes[i].nodeName);
+			//arr.push(melon.childNodes[i].childNodes[i].nodeValue); 줄바꿈(ENTER)을 자식으로 읽는다. 그래서 쓸수 없다. 
+		}
+		
+		var span=melon.getElementsByTagName("span");
+		for(var i=0;i<span.length;i++){
+			arr.push(span[i].childNodes[0].nodeValue);
+		}
+		alert(arr.join("\n"));
+	}
+	function method(){
+		var arr = new Array();
+		
+		var apple = document.getElementById("apple");
+		var appleChild = apple.childNodes;
+		
+		for(var i=0;i<appleChild.length;i++){
+			//nodeType -> 1.태그노드 2.속성노드 3.텍스트노드
+			arr.push(appleChild[i].nodeName+" , "+appleChild[i].nodeValue+" , "+appleChild[i].nodeType);			
+		}
+		
+		var span=apple.getElementsByTagName("span");
+		arr.push(span[0].childNodes[0].nodeValue);
+		
+		var i=apple.getElementsByTagName("i");
+		arr.push(i[0].childNodes[0].nodeValue);
+		
+		var b=apple.getElementsByTagName("b");
+		arr.push(b[0].childNodes[0].nodeValue);
+		
+		alert(arr.join("\n"));
+	}
+	function tagMod(){
+		var arr = new Array();
+		var apple = document.getElementById("apple");
+		var appleChild = apple.childNodes;
+		
+		for(var i=0;i<appleChild.length;i++){
+			if(appleChild[i].nodeType==1){
+				arr.push(appleChild[i].childNodes[0].nodeValue);
+			}
+		}
+		
+		alert(arr.join("\n"));
+		
+		//부모는 ENTER라는 자식을 받아들이기 때문에 조심해야한다. 
+		
+	}
+
+</script>
+</head>
+<body>
+	<div>나는 사과를 좋아합니다.</div>
+	<div id="result"></div>
+	<br><br>
+	
+	<input type="button" value="클릭" onclick="fun()"/>
+	
+	<br><br>
+	<span id="melon">
+		<span>가</span>
+		<span>나</span>
+		<span>다</span>
+	</span>
+	<input type="button" value="클릭" onclick="sub()"/>
+	
+	<br><br>
+	
+	<div id="apple">
+		<span>A</span>
+		<i>B</i>
+		<b>C</b>
+	</div>
+	<input type="button" value="클릭" onclick="method()"/>
+	<input type="button" value="클릭" onclick="tagMod()"/>
+	
+</body>
+</html>
