@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JQuery UI</title>
+</head>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript" src="base/jquery-ui.js"></script>
+<link rel="stylesheet" href="base/jquery-ui.css"/>
+<link rel="stylesheet" href="base/jquery-ui.structure.css"/>
+<link rel="stylesheet" href="base/jquery-ui.theme.css"/>
+<script type="text/javascript">
+	$(function(){
+		$("#tabs").tabs({
+			active:1,
+			show:{effect:"blind",duration:800}
+		});
+		$("#two > button:eq(0)").button();
+		$("#one").buttonset();
+	});
+</script>
+<body>
+	<div id="tabs" style="width:300px;">   <!-- ctr+shit+f 줄 정리 -->
+		<ul>
+			<li><a href="#tabs-1">기본정보</a></li>
+			<li><a href="#tabs-2">부가정보</a></li>
+		</ul>
+		
+		<div id="tabs-1">
+		 	<form>
+				<label>이&nbsp;&nbsp;름</label><input type="text" name="irum" /><p>
+				<label>연락처</label><input type="text" name="phone" /><p>
+		        <label>이메일</label><input type="text" name="email" />
+			</form>
+		</div>
+	
+		<div id="tabs-2">
+			<form>
+				<label>거주지선택</label>
+				<select>
+				    <option> 서울</option>
+		            <option> 부산</option>
+					<option> 대구</option>
+					<option> 광주</option>
+		        </select><p>
+		        
+				<label>성별선택</label>
+				<input type="radio" id="g1" value="남"/>남자
+		        <input type="radio" id="g2" value="여"/>여자
+			</form>		
+		</div>
+	</div>
+	<br/><br/>
+	
+	<div id="two">
+		<button>로그인</button>
+		<button>인사말</button>
+		<button>고객센터</button>
+	</div>
+	<div id="one">
+		<button>로그인</button>
+		<button>인사말</button>
+		<button>고객센터</button>
+	</div>
+</body>
+</html>
+
+
+
+
+
+

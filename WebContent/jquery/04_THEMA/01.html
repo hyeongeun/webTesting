@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript" src="base/jquery-ui.js"></script>
+<link rel="stylesheet" href="base/jquery-ui.css"/>
+<link rel="stylesheet" href="base/jquery-ui.structure.css"/>
+<link rel="stylesheet" href="base/jquery-ui.theme.css"/>
+<script type="text/javascript">
+	$(function(){
+		$("#accordion").accordion({
+			active:2,
+			animate:1000,
+			event:"mouseover"
+		});
+	});
+</script>
+</head>
+<body>
+  <div id="accordion" style="width:500px;">
+	  <h3>Section 1</h3>
+	  <div>
+	    <p>1번입니다.</p>
+	  </div>
+	  
+	  <h3>Section 2</h3>
+	  <div>
+	    <p>2번입니다.</p>
+	  </div>
+	  
+	  <h3>Section 3</h3>
+	  <div>
+	    <p>3번입니다.</p>
+	    <ul>
+	      <li>one</li>
+	      <li>two</li>
+	      <li>three</li>
+	    </ul>
+	  </div>
+	 
+	  <h3>Section 4</h3>
+	  <div>
+	    <p>4-1번</p>
+	    <p>4-2번</p>
+	  </div>
+   </div>
+</body>
+</html>

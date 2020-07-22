@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery UI</title>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript" src="base/jquery-ui.js"></script>
+<link rel="stylesheet" href="base/jquery-ui.css"/>
+<link rel="stylesheet" href="base/jquery-ui.structure.css"/>
+<link rel="stylesheet" href="base/jquery-ui.theme.css"/>
+<script type="text/javascript">
+	$(function(){
+		var arrStr = ["가오리","가식","가짜","가위","가방","가지","나무","나방","나대지마","나가","나가리","나팔"
+						,"다람쥐","다리","다리미","다시마"]
+		$("#tags").autocomplete({
+			source: arrStr
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<div>
+		<label>검색</label>
+		<input id="tags"/>
+	</div>
+	
+		
+</body>
+</html>
+
+
+
+
+
