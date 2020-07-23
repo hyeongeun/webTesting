@@ -12,6 +12,21 @@
 		float:left;
 	}
 </style>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#slideUp").click(function(){
+			$("div").slideUp();
+		});
+		
+		$("#slideDown").click(function(){
+			$("div").slideDown("slow");
+		});
+		$("#slideToggle").click(function(){
+			$("div").slideToggle(1000);
+		});
+	});
+</script>
 </head>
 <body>
 	<button id="slideUp">SILED UP</button>

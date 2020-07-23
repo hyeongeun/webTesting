@@ -8,6 +8,17 @@
 		font-size:13px;
 	}
 </style>
+<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	// toggle -> hide와 show를 번갈아 가면서 쓸수 있다.
+	$(function(){
+		$("button").click(function(){
+			$("img:eq(0)").toggle("slow", function(){
+				alert("ok");
+			});
+		});
+	});
+</script>
 <body>
 	<img src="../img/Chrysanthemum.jpg" width="300" height="300"/><br/>
 	<button>TOOGLE</button>

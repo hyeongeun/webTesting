@@ -2,30 +2,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>jQuery Effects</title>
+<title>JQuery Animations</title>
 <style type="text/css">
-	body{
-		font-size:13px;
-	}
+	body {font-size:12px;}
+	div {background:#6699FF; height:100px; width:100px; position:relative;}
 </style>
 <script type="text/javascript" src="../jquery-3.5.1.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$("#fadeOut").click(function(){
-			$("img").fadeOut();
-			
-		});
-		$("#fadeIn").click(function(){
-			$("img").fadeIn(3000);
-			
-		});
+		$("div").animate({left:"400px", opacity:0.5},2000);
+		$("div").animate({top:"100px"},1000);
+		$("div").slideUp(500);
+		$("div").slideDown(1000);
+		$("div").animate({left:"0px"},1000);
+		
 	});
+
 </script>
 </head>
-<body>
-	<img src="../img/sample2.jpg" width="300" height="307" />
-	<br/>
-	<button id="fadeOut">fadeOut</button>
-	<button id="fadeIn">fadeIn</button>
+<body>	
+	<div> </div>
 </body>
 </html>
